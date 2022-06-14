@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "s5Q5iZFVms8dPjK159DsKzSXOR7JxjFFeRcvbUfg69OdcpBmaJQOczw9+C+k3f6LCdS2Q0uMBBFo3GcSJnS8FA==",
+  "success": true,
+  "projectFilePath": "D:\\Downloads\\oop-repository-template-master\\Backups\\Backups.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\h-b-1\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}

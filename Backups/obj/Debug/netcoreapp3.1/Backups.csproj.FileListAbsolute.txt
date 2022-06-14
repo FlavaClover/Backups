@@ -1,0 +1,14 @@
+D:\Downloads\oop-repository-template-master\Backups\bin\Debug\netcoreapp3.1\Backups.exe
+D:\Downloads\oop-repository-template-master\Backups\bin\Debug\netcoreapp3.1\Backups.deps.json
+D:\Downloads\oop-repository-template-master\Backups\bin\Debug\netcoreapp3.1\Backups.runtimeconfig.json
+D:\Downloads\oop-repository-template-master\Backups\bin\Debug\netcoreapp3.1\Backups.runtimeconfig.dev.json
+D:\Downloads\oop-repository-template-master\Backups\bin\Debug\netcoreapp3.1\Backups.dll
+D:\Downloads\oop-repository-template-master\Backups\bin\Debug\netcoreapp3.1\Backups.pdb
+D:\Downloads\oop-repository-template-master\Backups\obj\Debug\netcoreapp3.1\Backups.csproj.AssemblyReference.cache
+D:\Downloads\oop-repository-template-master\Backups\obj\Debug\netcoreapp3.1\Backups.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\oop-repository-template-master\Backups\obj\Debug\netcoreapp3.1\Backups.AssemblyInfoInputs.cache
+D:\Downloads\oop-repository-template-master\Backups\obj\Debug\netcoreapp3.1\Backups.AssemblyInfo.cs
+D:\Downloads\oop-repository-template-master\Backups\obj\Debug\netcoreapp3.1\Backups.csproj.CoreCompileInputs.cache
+D:\Downloads\oop-repository-template-master\Backups\obj\Debug\netcoreapp3.1\Backups.dll
+D:\Downloads\oop-repository-template-master\Backups\obj\Debug\netcoreapp3.1\Backups.pdb
+D:\Downloads\oop-repository-template-master\Backups\obj\Debug\netcoreapp3.1\Backups.genruntimeconfig.cache
