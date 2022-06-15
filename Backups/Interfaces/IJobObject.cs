@@ -6,16 +6,6 @@ namespace Backups.Interfaces
 {
     public interface IJobObject
     {
-        public string FilePath
-        {
-            get
-            {
-                return FilePath;
-            }
-            set
-            {
-                FilePath = value;
-            }
-        }
+        public string FilePath { get; set; }
     }
 }

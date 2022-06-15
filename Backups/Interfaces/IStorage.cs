@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Backups.Interfaces;
 
-namespace Backups
+namespace Backups.Interfaces
 {
-    public class Storage : IStorage
+    public interface IStorage
     {
     }
 }
