@@ -7,18 +7,11 @@ namespace Backups
 {
     public class TxtFile : IJobObject
     {
-        private string name;
-        public TxtFile(string filePath, string name)
+        public TxtFile(string filePath)
         {
             FilePath = filePath;
-            this.name = name;
         }
 
         public string FilePath { get; set; }
-
-        public override string ToString()
-        {
-            return name;
-        }
     }
 }
