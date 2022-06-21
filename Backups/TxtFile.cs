@@ -7,11 +7,11 @@ namespace Backups
 {
     public class TxtFile : IJobObject
     {
-        public TxtFile(string filePath)
+        public TxtFile(string path)
         {
-            FilePath = filePath;
+            Path = path;
         }
 
-        public string FilePath { get; set; }
+        public string Path { get; set; }
     }
 }

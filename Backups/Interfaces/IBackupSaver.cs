@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Backups.Interfaces
 {
-    public interface IJobObject
+    public interface IBackupSaver
     {
-        public string Path { get; set; }
+        void SaveBackup(RestorePoint restorePoint);
     }
 }

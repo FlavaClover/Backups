@@ -8,11 +8,13 @@ namespace Backups
     public class BackupJob
     {
         private List<IJobObject> jobObjects;
-
-        // private List<RestorePoint> restorePoints;
-        public BackupJob()
+        private List<RestorePoint> restorePoints;
+        private IStorage storage;
+        public BackupJob(IStorage storage)
         {
+            restorePoints = new List<RestorePoint>();
             jobObjects = new List<IJobObject>();
+            this.storage = storage;
         }
 
         public IJobObject AddJobObject(IJobObject jobObject)
@@ -28,17 +30,9 @@ namespace Backups
 
         public void Backup()
         {
-            if (!Directory.Exists("\\BU"))
-            {
-                Directory.CreateDirectory("\\BU");
-            }
-
-            int i = 1;
-            foreach (IJobObject jobObject in jobObjects)
-            {
-                File.Copy(jobObject.FilePath, $@"\BU\{i}.txt", true);
-                i++;
-            }
+            var p = new RestorePoint(jobObjects);
+            storage.CreateBackup(p);
+            restorePoints.Add(p);
         }
     }
 }
