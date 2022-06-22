@@ -9,19 +9,30 @@ namespace Backups
     {
         private List<IJobObject> jobObjects;
         private List<RestorePoint> restorePoints;
-        public BackupJob()
+        private IStorage storage;
+        public BackupJob(IStorage storage)
         {
+            restorePoints = new List<RestorePoint>();
             jobObjects = new List<IJobObject>();
+            this.storage = storage;
         }
 
-        public void AddJobObject(IJobObject jobObject)
+        public IJobObject AddJobObject(IJobObject jobObject)
         {
             jobObjects.Add(jobObject);
+            return jobObject;
         }
 
         public void DeleteJobObject(IJobObject jobObject)
         {
             jobObjects.Remove(jobObject);
+        }
+
+        public void Backup()
+        {
+            var p = new RestorePoint(jobObjects);
+            storage.CreateBackup(p);
+            restorePoints.Add(p);
         }
     }
 }

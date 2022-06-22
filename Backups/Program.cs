@@ -9,8 +9,12 @@ namespace Backups
     {
         private static void Main()
         {
-            var txtFile = new TxtFile(@"C:\Users\h-b-1\Desktop\A.txt", "A");
-            Console.WriteLine(txtFile);
+            // var split = new Split();
+            var single = new Single();
+            var backupJob = new BackupJob(single);
+            backupJob.AddJobObject(new TxtFile(@"C:\Users\h-b-1\Desktop\A.txt"));
+            backupJob.AddJobObject(new TxtFile(@"C:\Users\h-b-1\Desktop\B.txt"));
+            backupJob.Backup();
         }
     }
 }
