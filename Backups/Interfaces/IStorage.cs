@@ -7,6 +7,7 @@ namespace Backups.Interfaces
     public interface IStorage
     {
         void CreateBackup(RestorePoint point);
-        void SaveStorage(IBackupSaver backupSaver, List<IJobObject> filesToSave, RestorePoint restorePoint);
+
+        // void SaveStorage(IBackupSaver backupSaver, List<IJobObject> filesToSave, RestorePoint restorePoint);
     }
 }
